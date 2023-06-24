@@ -63,3 +63,28 @@ C:\Users\User\Desktop\New folder\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThu
 C:\Users\User\Desktop\New folder\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
 C:\Users\User\Desktop\New folder\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
 C:\Users\User\Desktop\New folder\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe.config
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.exe
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\bin\Debug\QuanLyThuVien.pdb
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.fLogin.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmQLPhieuMuon.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmQLPhieuTra.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmQLThanhVien.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.fTableManage.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.Properties.Resources.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmQLSach.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmTimKiemSach.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmDoiMatKhau.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmSachDangMuon.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmSachDaTra.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmThanhVien.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmDangMuon.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.ucFrmDaTra.resources
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.GenerateResource.cache
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe.licenses
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.exe
+C:\Users\User\Desktop\QUANLYTHUVIEN\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.pdb
+C:\Users\User\Desktop\QuanLyThuVien\QuanLyThuVien\QuanLyThuVien\obj\Debug\QuanLyThuVien.GUI.ucFrmDangKyMuonSach.resources

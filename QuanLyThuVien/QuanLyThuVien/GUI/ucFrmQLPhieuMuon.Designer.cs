@@ -64,11 +64,11 @@
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.d_NPT.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d_NPT.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_NPT.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MP.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.d_NM.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.d_NM.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.d_NM.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MDG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -125,6 +125,7 @@
             // lb_NPT
             // 
             this.lb_NPT.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.lb_NPT.Appearance.Options.UseFont = true;
             this.lb_NPT.Location = new System.Drawing.Point(31, 137);
             this.lb_NPT.Margin = new System.Windows.Forms.Padding(2);
             this.lb_NPT.Name = "lb_NPT";
@@ -170,7 +171,6 @@
             // 
             // txt_MP
             // 
-            this.txt_MP.Enabled = false;
             this.txt_MP.Location = new System.Drawing.Point(130, 9);
             this.txt_MP.Margin = new System.Windows.Forms.Padding(2);
             this.txt_MP.Name = "txt_MP";
@@ -180,6 +180,7 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Location = new System.Drawing.Point(30, 10);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl5.Name = "labelControl5";
@@ -219,6 +220,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(30, 103);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl4.Name = "labelControl4";
@@ -229,6 +231,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(30, 72);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
@@ -239,6 +242,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(30, 42);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl2.Name = "labelControl2";
@@ -325,7 +329,7 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Image = global::QuanLyThuVien.Properties.Resources.Search_icon1;
+            this.btnTimKiem.ImageOptions.Image = global::QuanLyThuVien.Properties.Resources.Search_icon1;
             this.btnTimKiem.Location = new System.Drawing.Point(695, 7);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";
@@ -344,6 +348,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F);
+            this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(415, 13);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";

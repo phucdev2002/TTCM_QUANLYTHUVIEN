@@ -19,8 +19,8 @@ namespace QuanLyThuVien.DAO
         {
             if (GetData("select* from SACH where MaSach = '" + _s.MaSach + "'").Rows.Count > 0)
                 return false;
-            string sql = string.Format("Insert Into SACH values('{0}',N'{1}',N'{2}',N'{3}',N'{4}','{5}','{6}')",
-                _s.MaSach, _s.TenSach, _s.TacGia, _s.TheLoai, _s.NhaXuatBan, _s.GiaSach, _s.SoLuong);
+            string sql = string.Format("Insert Into SACH values('{0}',N'{1}',N'{2}',N'{3}',N'{4}','{5}','{6}', '{7}')",
+                _s.MaSach, _s.TenSach, _s.TacGia, _s.TheLoai, _s.NhaXuatBan, _s.GiaSach, _s.SoLuong, _s.TinhTrang);
 
             Excute(sql);
             return true;
@@ -32,8 +32,8 @@ namespace QuanLyThuVien.DAO
 
         public void Update(Sach _s)
         {
-            string sql = string.Format("update SACH set TenSach = N'{0}', TacGia = N'{1}', TheLoai = N'{2}', NhaXuatBan = N'{3}', GiaSach = '{4}', SoLuong = '{5}' where MaSach = '{6}'",
-                _s.TenSach, _s.TacGia, _s.TheLoai, _s.NhaXuatBan, _s.GiaSach, _s.SoLuong, _s.MaSach);
+            string sql = string.Format("update SACH set TenSach = N'{0}', TacGia = N'{1}', TheLoai = N'{2}', NhaXuatBan = N'{3}', GiaSach = '{4}', SoLuong = '{5}', TinhTrang = '{6}' where MaSach = '{7}'",
+                _s.TenSach, _s.TacGia, _s.TheLoai, _s.NhaXuatBan, _s.GiaSach, _s.SoLuong, _s.TinhTrang, _s.MaSach);
             Excute(sql);
         }
         public DataTable Search(string _timkiem, string _loaitk)

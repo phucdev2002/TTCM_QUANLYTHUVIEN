@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -39,15 +40,18 @@
             this.rdoBtnHoTen = new System.Windows.Forms.RadioButton();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtTimKiem = new DevExpress.XtraEditors.TextEdit();
+            this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // gridControl1
             // 
+            this.gridControl1.AccessibleName = "";
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.Location = new System.Drawing.Point(0, 108);
             this.gridControl1.MainView = this.gridView1;
@@ -86,10 +90,7 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Ngày Mượn";
-            this.gridColumn3.FieldName = "NgayMuon";
             this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
             // 
             // gridColumn4
             // 
@@ -97,7 +98,7 @@
             this.gridColumn4.FieldName = "NgayTra";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.VisibleIndex = 2;
             // 
             // panelControl1
             // 
@@ -168,6 +169,7 @@
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTimKiem.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -185,6 +187,6 @@
         private System.Windows.Forms.RadioButton rdoBtnHoTen;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.TextEdit txtTimKiem;
-
+        private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
     }
 }

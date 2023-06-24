@@ -15,5 +15,6 @@ namespace QuanLyThuVien.DTO
         public string NhaXuatBan { get; set; }
         public int GiaSach { get; set; }
         public int SoLuong { get; set; }
+        public String TinhTrang { get; set; }
     }
 }

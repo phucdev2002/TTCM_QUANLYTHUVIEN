@@ -16,16 +16,18 @@ namespace QuanLyThuVien.DAO
             string sqlString = @"select * from DOCGIA";
             return GetData(sqlString);
         }
-        public bool Insert(DocGia dg)
+
+        /*public bool Insert(DocGia dg)
         {
             if (GetData("select* from DOCGIA where MaDocGia = '" + dg.MaDocGia + "'").Rows.Count > 0)
                 return false;
-            string sql = string.Format("Insert Into DOCGIA values('{0}','{1}','{2}','{3}','{4}')",
-                dg.MaDocGia, dg.HoTen, dg.GioiTinh,dg.NamSinh, dg.DiaChi);
+            string sql = string.Format("Insert Into DOCGIA values('{0}','{1}','{2}','{3}','{4}','{5}')",
+                dg.MaDocGia, dg.TenDangNhap, dg.HoTen, dg.GioiTinh,dg.NamSinh, dg.DiaChi);
 
             Excute(sql);
             return true;
-        }
+        }*/
+
         public void Delete(string mDG)
         {
             Excute("delete from DOCGIA where MaDocGia = '" + mDG + "'");
@@ -33,8 +35,8 @@ namespace QuanLyThuVien.DAO
 
         public void Update(DocGia dg)
         {
-            string sql = string.Format("update DOCGIA set HoTen = N'{0}', GioiTinh = N'{1}', NamSinh = '{2}', DiaChi = N'{3}' where MaDocGia = '{4}'",
-                dg.HoTen, dg.GioiTinh, dg.NamSinh, dg.DiaChi, dg.MaDocGia);
+            string sql = string.Format("update DOCGIA set TenDangNhap = N'{0}', HoTen = N'{1}', GioiTinh = N'{2}', NamSinh = '{3}', DiaChi = N'{4}' where MaDocGia = '{5}'",
+                dg.TenDangNhap, dg.HoTen, dg.GioiTinh, dg.NamSinh, dg.DiaChi, dg.MaDocGia);
             Excute(sql);
         }
         public DataTable Search(string _timkiem)

@@ -36,9 +36,9 @@ namespace QuanLyThuVien
 
                 PhieuMuon _pM = new PhieuMuon();
 
-                Random rdm = new Random();
-                _pM.MaPhieu = rdm.Next(0, 1000).ToString();
-
+                //Random rdm = new Random();
+                //_pM.MaPhieu = rdm.Next(0, 1000).ToString();
+                _pM.MaPhieu = txt_MP.Text;
                 _pM.MaDocGia = txt_MDG.Text;
                 _pM.MaSach = txt_MS.Text;
                 
@@ -85,7 +85,7 @@ namespace QuanLyThuVien
                     if (d_NPT.Text == "")
                         _pM.NgayPhaiTra = DateTime.Now;
                     else
-                        _pM.NgayPhaiTra = d_NM.DateTime;
+                        _pM.NgayPhaiTra = d_NPT.DateTime;
 
                     pmBUS.Sua(_pM);
                     ucFrmQLPhieuMuon_Load(sender, e);

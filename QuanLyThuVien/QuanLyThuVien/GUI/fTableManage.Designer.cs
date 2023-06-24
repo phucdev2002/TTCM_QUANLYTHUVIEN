@@ -52,6 +52,8 @@
             this.barButtonItem11 = new DevExpress.XtraBars.BarButtonItem();
             this.skinDropDownButtonItem1 = new DevExpress.XtraBars.SkinDropDownButtonItem();
             this.skinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
+            this.skinLink = new DevExpress.XtraBars.BarLinkContainerItem();
+            this.barBtnDangKyMuonSach = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonTimKiem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -63,6 +65,7 @@
             this.ribbonThongKe = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.repositoryItemRadioGroup1 = new DevExpress.XtraEditors.Repository.RepositoryItemRadioGroup();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
             this.panelCha = new DevExpress.XtraEditors.PanelControl();
@@ -125,8 +128,6 @@
             this.backstageViewTabItem19 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.skinLink = new DevExpress.XtraBars.BarLinkContainerItem();
             ((System.ComponentModel.ISupportInitialize)(this.applicationMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemRadioGroup1)).BeginInit();
@@ -208,10 +209,11 @@
             this.barButtonItem11,
             this.skinDropDownButtonItem1,
             this.skinPaletteDropDownButtonItem1,
-            this.skinLink});
+            this.skinLink,
+            this.barBtnDangKyMuonSach});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ribbonControl1.MaxItemId = 24;
+            this.ribbonControl1.MaxItemId = 25;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1});
@@ -326,18 +328,20 @@
             // 
             this.barbtnThanhVien.Caption = "Thông Tin";
             this.barbtnThanhVien.Id = 16;
-            this.barbtnThanhVien.ImageOptions.LargeImage = global::QuanLyThuVien.Properties.Resources.user;
+            this.barbtnThanhVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barbtnThanhVien.ImageOptions.Image")));
             this.barbtnThanhVien.LargeWidth = 80;
             this.barbtnThanhVien.Name = "barbtnThanhVien";
+            this.barbtnThanhVien.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barbtnThanhVien.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barbtnThanhVien_ItemClick);
             // 
             // barBtnDoiMatKhau
             // 
             this.barBtnDoiMatKhau.Caption = "Đổi mật khẩu";
             this.barBtnDoiMatKhau.Id = 17;
-            this.barBtnDoiMatKhau.ImageOptions.LargeImage = global::QuanLyThuVien.Properties.Resources._lock;
+            this.barBtnDoiMatKhau.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnDoiMatKhau.ImageOptions.Image")));
             this.barBtnDoiMatKhau.LargeWidth = 80;
             this.barBtnDoiMatKhau.Name = "barBtnDoiMatKhau";
+            this.barBtnDoiMatKhau.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barBtnDoiMatKhau.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDoiMatKhau_ItemClick);
             // 
             // bar_SachDangMuon
@@ -392,6 +396,25 @@
             this.skinPaletteDropDownButtonItem1.Id = 22;
             this.skinPaletteDropDownButtonItem1.Name = "skinPaletteDropDownButtonItem1";
             // 
+            // skinLink
+            // 
+            this.skinLink.Caption = "Skin";
+            this.skinLink.Id = 23;
+            this.skinLink.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("skinLink.ImageOptions.Image")));
+            this.skinLink.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("skinLink.ImageOptions.LargeImage")));
+            this.skinLink.Name = "skinLink";
+            this.skinLink.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // barBtnDangKyMuonSach
+            // 
+            this.barBtnDangKyMuonSach.Caption = "Đăng ký mượn sách";
+            this.barBtnDangKyMuonSach.Id = 24;
+            this.barBtnDangKyMuonSach.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barBtnDangKyMuonSach.Name = "barBtnDangKyMuonSach";
+            this.barBtnDangKyMuonSach.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barBtnDangKyMuonSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDangKyMuonSach_ItemClick);
+            // 
             // ribbonPageCategory1
             // 
             this.ribbonPageCategory1.Name = "ribbonPageCategory1";
@@ -409,6 +432,7 @@
             // ribbonPageGroup3
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.barBtnTimKiemSach);
+            this.ribbonPageGroup3.ItemLinks.Add(this.barBtnDangKyMuonSach);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "Tìm kiếm";
             // 
@@ -467,6 +491,12 @@
             this.ribbonPageGroup8});
             this.ribbonPage2.Name = "ribbonPage2";
             this.ribbonPage2.Text = "Giao diện";
+            // 
+            // ribbonPageGroup8
+            // 
+            this.ribbonPageGroup8.ItemLinks.Add(this.skinLink);
+            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
+            this.ribbonPageGroup8.Text = "ribbonPageGroup8";
             // 
             // repositoryItemRadioGroup1
             // 
@@ -1006,22 +1036,6 @@
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
             this.ribbonPageGroup7.Text = "ribbonPageGroup7";
             // 
-            // ribbonPageGroup8
-            // 
-            this.ribbonPageGroup8.ItemLinks.Add(this.skinLink);
-            this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "ribbonPageGroup8";
-            // 
-            // skinLink
-            // 
-            this.skinLink.Caption = "Skin";
-            this.skinLink.Id = 23;
-            this.skinLink.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItem1.ImageOptions.Image")));
-            this.skinLink.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barLinkContainerItem1.ImageOptions.LargeImage")));
-            this.skinLink.Name = "skinLink";
-            this.skinLink.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
-            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
-            // 
             // fTableManage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1205,5 +1219,6 @@
         private DevExpress.XtraBars.SkinPaletteDropDownButtonItem skinPaletteDropDownButtonItem1;
         private DevExpress.XtraBars.BarLinkContainerItem skinLink;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
+        private DevExpress.XtraBars.BarButtonItem barBtnDangKyMuonSach;
     }
 }

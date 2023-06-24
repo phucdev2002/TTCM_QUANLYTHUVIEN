@@ -37,8 +37,9 @@ namespace QuanLyThuVien
                 _pt.MaDocGia = txt_MDG.Text;
                 _pt.MaSach = txt_MS.Text;
 
-                Random rdm = new Random();
-                _pt.MaPhieu = rdm.Next(0, 1000).ToString();
+                //Random rdm = new Random();
+                //_pt.MaPhieu = rdm.Next(0, 1000).ToString();
+                _pt.MaPhieu = txt_MP.Text;
 
                 if (d_NT.Text == "")
                     _pt.NgayTra = DateTime.Now;

@@ -44,7 +44,7 @@ namespace QuanLyThuVien.DAO
         public void Update(PhieuMuon _pm)
         {
             string sql = string.Format("update PHIEUMUON set MaDocGia = N'{0}', MaSach = N'{1}', NgayMuon = '{2}', NgayPhaiTra = '{3}' where MaPhieu = '{4}'",
-                 _pm.MaDocGia, _pm.MaSach, _pm.NgayMuon, _pm.MaPhieu, _pm.NgayPhaiTra);
+                 _pm.MaDocGia, _pm.MaSach, _pm.NgayMuon, _pm.NgayPhaiTra, _pm.MaPhieu);
             Excute(sql);
         }
         public DataTable Search(string _timkiem, string _loaitk)

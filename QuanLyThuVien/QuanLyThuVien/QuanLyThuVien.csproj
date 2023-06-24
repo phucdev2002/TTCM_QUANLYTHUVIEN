@@ -38,7 +38,6 @@
     </Reference>
     <Reference Include="DevExpress.BonusSkins.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      
       <Private>False</Private>
     </Reference>
     <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
@@ -98,12 +97,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DangKyMuon_BUS.cs" />
     <Compile Include="BUS\DangMuon_BUS.cs" />
     <Compile Include="BUS\DaTra_BUS.cs" />
     <Compile Include="BUS\LichSuMuon_BUS.cs" />
     <Compile Include="BUS\MatKhau_BUS.cs" />
     <Compile Include="BUS\SachDangMuon_BUS.cs" />
     <Compile Include="BUS\ThanhVien_BUS.cs" />
+    <Compile Include="DAO\DangKyMuon_DAO.cs" />
     <Compile Include="DAO\DangMuon_DAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DaTra_DAO.cs" />
@@ -111,10 +112,17 @@
     <Compile Include="DAO\MatKhau_DAO.cs" />
     <Compile Include="DAO\SachDangMuon_DAO.cs" />
     <Compile Include="DAO\ThanhVien_DAO.cs" />
+    <Compile Include="DTO\DangKyMuon.cs" />
     <Compile Include="DTO\DocGia.cs" />
     <Compile Include="BUS\DocGia_BUS.cs" />
     <Compile Include="DAO\DocGia_DAO.cs" />
     <Compile Include="DTO\ThanhVien.cs" />
+    <Compile Include="GUI\ucFrmDangKyMuonSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucFrmDangKyMuonSach.Designer.cs">
+      <DependentUpon>ucFrmDangKyMuonSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +212,9 @@
     <Compile Include="ucFrmDaTra.Designer.cs">
       <DependentUpon>ucFrmDaTra.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\ucFrmDangKyMuonSach.resx">
+      <DependentUpon>ucFrmDangKyMuonSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>

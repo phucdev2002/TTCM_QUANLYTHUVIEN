@@ -20,16 +20,17 @@ namespace QuanLyThuVien
             InitializeComponent();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        /*private void btnThem_Click(object sender, EventArgs e)
         {
             lb_MDG.Visible = false;
             lb_Trung.Visible = false;
 
             DocGia dg = new DocGia();
 
-            Random rdm = new Random();
-            dg.MaDocGia = rdm.Next(0, 1000).ToString();
-
+            //Random rdm = new Random();
+            //dg.MaDocGia = rdm.Next(0, 1000).ToString();
+            dg.MaDocGia = txtMaDocGia.Text;
+            dg.TenDangNhap = txtTenDangNhap.Text;
             dg.HoTen = txtHoTen.Text;
             dg.DiaChi = txtDiaChi.Text;
             if (rdoBtnNam.Checked == true)
@@ -50,14 +51,16 @@ namespace QuanLyThuVien
             //load lai
             ucFrmQLThanhVien_Load(sender, e);
             ResetGridview();
-        }
+        }*/
 
         private void btnSua_Click(object sender, EventArgs e)
         {
+
             lb_MDG.Visible = false;
             lb_Trung.Visible = false;
             DocGia dg = new DocGia();
             dg.MaDocGia = txtMaDocGia.Text;
+            dg.TenDangNhap = txtTenDangNhap.Text;
             dg.HoTen = txtHoTen.Text;
             dg.DiaChi = txtDiaChi.Text;
             if (rdoBtnNam.Checked == true)
@@ -87,6 +90,7 @@ namespace QuanLyThuVien
         private void gridView1_CustomRowCellEditForEditing(object sender, DevExpress.XtraGrid.Views.Grid.CustomRowCellEditEventArgs e)
         {
             txtMaDocGia.Text = gridView1.GetRowCellValue(e.RowHandle, "MaDocGia").ToString();
+            txtTenDangNhap.Text = gridView1.GetRowCellValue(e.RowHandle, "TenDangNhap").ToString();
             txtHoTen.Text = gridView1.GetRowCellValue(e.RowHandle, "HoTen").ToString();
             txtDiaChi.Text = gridView1.GetRowCellValue(e.RowHandle, "DiaChi").ToString();
             string a = gridView1.GetRowCellValue(e.RowHandle, "GioiTinh").ToString();

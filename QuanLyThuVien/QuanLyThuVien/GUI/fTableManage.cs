@@ -14,6 +14,8 @@ using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars.Helpers;
 using QuanLyThuVien.DAO;
+using QuanLyThuVien.GUI;
+
 namespace QuanLyThuVien
 {
     public partial class fTableManage : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -40,9 +42,11 @@ namespace QuanLyThuVien
             {
                 bar_SachDangMuon.Enabled = false;
                 bar_LichSu.Enabled = false;
+                barBtnDangKyMuonSach.Enabled = false;
+                barbtnThanhVien.Enabled = false;
             }
         }
-        
+
 
         private void barBtnUser_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -150,6 +154,15 @@ namespace QuanLyThuVien
         private void fTableManage_Load(object sender, EventArgs e)
         {
             SkinHelper.InitSkinPopupMenu(skinLink);
+        }
+
+        private void barBtnDangKyMuonSach_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            panelCha.Controls.Clear();
+            ucFrmDangKyMuonSach frm = new ucFrmDangKyMuonSach(tdn);
+            frm.Dock = System.Windows.Forms.DockStyle.Fill;
+            panelCha.Controls.Add(frm);
+          
         }
     }
 }

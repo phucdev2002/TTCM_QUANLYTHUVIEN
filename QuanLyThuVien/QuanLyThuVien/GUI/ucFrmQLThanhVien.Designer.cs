@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
             this.lb_MDG = new System.Windows.Forms.Label();
             this.lb_Trung = new System.Windows.Forms.Label();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -37,7 +39,6 @@
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnSua = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.rdoBtnNu = new System.Windows.Forms.RadioButton();
             this.rdoBtnNam = new System.Windows.Forms.RadioButton();
             this.dateNamSinh = new DevExpress.XtraEditors.DateEdit();
@@ -55,13 +56,15 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTimDocGia.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dateNamSinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamSinh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dateNamSinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMaDocGia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtHoTen.Properties)).BeginInit();
@@ -73,6 +76,8 @@
             // 
             // panelControl1
             // 
+            this.panelControl1.Controls.Add(this.labelControl3);
+            this.panelControl1.Controls.Add(this.txtTenDangNhap);
             this.panelControl1.Controls.Add(this.lb_MDG);
             this.panelControl1.Controls.Add(this.lb_Trung);
             this.panelControl1.Controls.Add(this.labelControl2);
@@ -81,7 +86,6 @@
             this.panelControl1.Controls.Add(this.labelControl1);
             this.panelControl1.Controls.Add(this.btnXoa);
             this.panelControl1.Controls.Add(this.btnSua);
-            this.panelControl1.Controls.Add(this.btnThem);
             this.panelControl1.Controls.Add(this.rdoBtnNu);
             this.panelControl1.Controls.Add(this.rdoBtnNam);
             this.panelControl1.Controls.Add(this.dateNamSinh);
@@ -98,6 +102,24 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(651, 165);
             this.panelControl1.TabIndex = 0;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(14, 36);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(79, 13);
+            this.labelControl3.TabIndex = 14;
+            this.labelControl3.Text = "Tên Đăng Nhập:";
+            // 
+            // txtTenDangNhap
+            // 
+            this.txtTenDangNhap.Enabled = false;
+            this.txtTenDangNhap.Location = new System.Drawing.Point(101, 34);
+            this.txtTenDangNhap.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTenDangNhap.Name = "txtTenDangNhap";
+            this.txtTenDangNhap.Size = new System.Drawing.Size(180, 20);
+            this.txtTenDangNhap.TabIndex = 13;
             // 
             // lb_MDG
             // 
@@ -125,7 +147,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(14, 12);
+            this.labelControl2.Location = new System.Drawing.Point(14, 11);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(58, 13);
@@ -134,7 +156,7 @@
             // 
             // btnTimDocGia
             // 
-            this.btnTimDocGia.Image = global::QuanLyThuVien.Properties.Resources.Search_icon1;
+            this.btnTimDocGia.ImageOptions.Image = global::QuanLyThuVien.Properties.Resources.Search_icon1;
             this.btnTimDocGia.Location = new System.Drawing.Point(603, 11);
             this.btnTimDocGia.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimDocGia.Name = "btnTimDocGia";
@@ -161,7 +183,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(562, 70);
+            this.btnXoa.Location = new System.Drawing.Point(524, 70);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(85, 28);
@@ -171,7 +193,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(459, 70);
+            this.btnSua.Location = new System.Drawing.Point(402, 70);
             this.btnSua.Margin = new System.Windows.Forms.Padding(2);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(85, 28);
@@ -179,20 +201,10 @@
             this.btnSua.Text = "Sửa";
             this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(357, 70);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(85, 28);
-            this.btnThem.TabIndex = 8;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
             // rdoBtnNu
             // 
             this.rdoBtnNu.AutoSize = true;
-            this.rdoBtnNu.Location = new System.Drawing.Point(180, 70);
+            this.rdoBtnNu.Location = new System.Drawing.Point(180, 88);
             this.rdoBtnNu.Margin = new System.Windows.Forms.Padding(2);
             this.rdoBtnNu.Name = "rdoBtnNu";
             this.rdoBtnNu.Size = new System.Drawing.Size(39, 17);
@@ -204,7 +216,7 @@
             // rdoBtnNam
             // 
             this.rdoBtnNam.AutoSize = true;
-            this.rdoBtnNam.Location = new System.Drawing.Point(101, 70);
+            this.rdoBtnNam.Location = new System.Drawing.Point(101, 88);
             this.rdoBtnNam.Margin = new System.Windows.Forms.Padding(2);
             this.rdoBtnNam.Name = "rdoBtnNam";
             this.rdoBtnNam.Size = new System.Drawing.Size(46, 17);
@@ -216,7 +228,7 @@
             // dateNamSinh
             // 
             this.dateNamSinh.EditValue = null;
-            this.dateNamSinh.Location = new System.Drawing.Point(101, 100);
+            this.dateNamSinh.Location = new System.Drawing.Point(101, 114);
             this.dateNamSinh.Margin = new System.Windows.Forms.Padding(2);
             this.dateNamSinh.Name = "dateNamSinh";
             this.dateNamSinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -228,7 +240,7 @@
             // 
             // txtDiaChi
             // 
-            this.txtDiaChi.Location = new System.Drawing.Point(101, 130);
+            this.txtDiaChi.Location = new System.Drawing.Point(101, 139);
             this.txtDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(180, 20);
@@ -237,7 +249,7 @@
             // txtMaDocGia
             // 
             this.txtMaDocGia.Enabled = false;
-            this.txtMaDocGia.Location = new System.Drawing.Point(101, 10);
+            this.txtMaDocGia.Location = new System.Drawing.Point(101, 9);
             this.txtMaDocGia.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaDocGia.Name = "txtMaDocGia";
             this.txtMaDocGia.Size = new System.Drawing.Size(180, 20);
@@ -245,7 +257,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(101, 39);
+            this.txtHoTen.Location = new System.Drawing.Point(101, 59);
             this.txtHoTen.Margin = new System.Windows.Forms.Padding(2);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(180, 20);
@@ -253,7 +265,7 @@
             // 
             // lbDiaChi
             // 
-            this.lbDiaChi.Location = new System.Drawing.Point(14, 133);
+            this.lbDiaChi.Location = new System.Drawing.Point(14, 142);
             this.lbDiaChi.Margin = new System.Windows.Forms.Padding(2);
             this.lbDiaChi.Name = "lbDiaChi";
             this.lbDiaChi.Size = new System.Drawing.Size(38, 13);
@@ -262,7 +274,7 @@
             // 
             // lbGioiTinh
             // 
-            this.lbGioiTinh.Location = new System.Drawing.Point(14, 70);
+            this.lbGioiTinh.Location = new System.Drawing.Point(14, 88);
             this.lbGioiTinh.Margin = new System.Windows.Forms.Padding(2);
             this.lbGioiTinh.Name = "lbGioiTinh";
             this.lbGioiTinh.Size = new System.Drawing.Size(44, 13);
@@ -271,7 +283,7 @@
             // 
             // lbNamSinh
             // 
-            this.lbNamSinh.Location = new System.Drawing.Point(14, 104);
+            this.lbNamSinh.Location = new System.Drawing.Point(14, 118);
             this.lbNamSinh.Margin = new System.Windows.Forms.Padding(2);
             this.lbNamSinh.Name = "lbNamSinh";
             this.lbNamSinh.Size = new System.Drawing.Size(48, 13);
@@ -280,7 +292,7 @@
             // 
             // lbHoTen
             // 
-            this.lbHoTen.Location = new System.Drawing.Point(14, 42);
+            this.lbHoTen.Location = new System.Drawing.Point(14, 62);
             this.lbHoTen.Margin = new System.Windows.Forms.Padding(2);
             this.lbHoTen.Name = "lbHoTen";
             this.lbHoTen.Size = new System.Drawing.Size(38, 13);
@@ -307,7 +319,8 @@
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3,
-            this.gridColumn5});
+            this.gridColumn5,
+            this.gridColumn7});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.CustomRowCellEditForEditing += new DevExpress.XtraGrid.Views.Grid.CustomRowCellEditEventHandler(this.gridView1_CustomRowCellEditForEditing);
@@ -330,7 +343,7 @@
             this.gridColumn1.FieldName = "HoTen";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
+            this.gridColumn1.VisibleIndex = 2;
             // 
             // gridColumn2
             // 
@@ -340,7 +353,7 @@
             this.gridColumn2.FieldName = "GioiTinh";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.VisibleIndex = 3;
             // 
             // gridColumn3
             // 
@@ -352,7 +365,7 @@
             this.gridColumn3.GroupFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 3;
+            this.gridColumn3.VisibleIndex = 4;
             // 
             // gridColumn5
             // 
@@ -362,7 +375,15 @@
             this.gridColumn5.FieldName = "DiaChi";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 4;
+            this.gridColumn5.VisibleIndex = 5;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "Tên Đăng Nhập";
+            this.gridColumn7.FieldName = "TenDangNhap";
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 1;
             // 
             // gridColumn4
             // 
@@ -392,6 +413,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTimDocGia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamSinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNamSinh.Properties)).EndInit();
@@ -427,7 +449,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraEditors.SimpleButton btnXoa;
         private DevExpress.XtraEditors.SimpleButton btnSua;
-        private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraEditors.TextEdit txtTimDocGia;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SimpleButton btnTimDocGia;
@@ -437,5 +458,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
         private System.Windows.Forms.Label lb_Trung;
         private System.Windows.Forms.Label lb_MDG;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
     }
 }

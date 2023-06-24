@@ -11,7 +11,7 @@ namespace QuanLyThuVien.DAO
     {
         public DataTable loadSach()
         {
-            string sqlString = @"select DOCGIA.HoTen, SACH.TenSach, PHIEUTRA.NgayTra, PHIEUMUON.NgayMuon from SACH, DOCGIA, PHIEUTRA, PHIEUMUON where SACH.MaSach = PHIEUTRA.MaSach and PHIEUTRA.MaDocGia = DOCGIA.MaDocGia and SACH.MaSach = PHIEUMUON.MaSach and PHIEUMUON.MaDocGia = DOCGIA.MaDocGia";
+            string sqlString = @"select DOCGIA.HoTen, SACH.TenSach, PHIEUTRA.NgayTra from SACH, DOCGIA, PHIEUTRA where SACH.MaSach = PHIEUTRA.MaSach and PHIEUTRA.MaDocGia = DOCGIA.MaDocGia ";
             return GetData(sqlString);
         }
         public DataTable Search(string _timkiem, string _loaitk)

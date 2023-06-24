@@ -27,14 +27,16 @@ namespace QuanLyThuVien.BUS
             dgDao.Update(dg);
             return true;
         }
-        public int Them(DocGia dg)
+
+        /*public int Them(DocGia dg)
         {
             if (string.IsNullOrEmpty(dg.MaDocGia))
                 return 0;
             if (!dgDao.Insert(dg))
                 return -1;
             return 1;
-        }
+        }*/
+
         public DataTable TimKiem(string _timkiem)
         {
             return dgDao.Search(_timkiem);
