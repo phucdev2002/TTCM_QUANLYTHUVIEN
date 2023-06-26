@@ -24,16 +24,14 @@ namespace QuanLyThuVien
 
             if (tvBus.DangNhap(txt_TK.Text, txt_MK.Text) == true)
             {
-                fTableManage f = new fTableManage(this, txt_TK.Text);
-                this.Hide();
+                fTableManage f = new fTableManage(this, txt_TK.Text);             
                 f.ShowDialog();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!");
             }
-            
-
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -95,9 +93,5 @@ namespace QuanLyThuVien
             paneDangKy.Visible = false;
             btnDangKy.Visible = true;
         }
-
-        
-
-       
     }
 }

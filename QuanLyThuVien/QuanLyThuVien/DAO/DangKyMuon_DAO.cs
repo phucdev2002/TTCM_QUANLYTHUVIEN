@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyThuVien.DTO;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -9,10 +10,21 @@ namespace QuanLyThuVien.DAO
 {
     class DangKyMuon_DAO : DataProvider
     {
-        public DataTable loadDangKyMuon()
+        public DataTable loadDangKyMuon(string _tdn)
         {
-            string sqlString = @"select DK.MaPhieu, DK.MaDocGia, DG.HoTen, DK.MaSach, S.TenSach, DK.NgayMuon, DK.NgayPhaiTra from DOCGIA DG, DANGKYMUON DK, SACH S where DK.MaDocGia = DG.MaDocGia and DK.MaSach = S.MaSach";
+            string sqlString = string.Format("select * from DANGKYMUON, SACH, ACCOUNT where DANGKYMUON.MaDocGia = ACCOUNT.MaDocGia and SACH.MaSach = DANGKYMUON.MaSach and ACCOUNT.TenDangNhap = '{0}'", _tdn);
             return GetData(sqlString);
+        }
+
+        public bool Insert(DangKyMuon _dkm)
+        {
+            if (GetData("select* from DANGKYMUON where MaPhieu = '" + _dkm.MaPhieu + "'").Rows.Count > 0)
+                return false;
+            string sql = string.Format("Insert Into DANGKYMUON values('{0}','{1}','{2}','{3}', '{4}')",
+                _dkm.MaPhieu, _dkm.MaDocGia, _dkm.MaSach, _dkm.NgayMuon, _dkm.NgayPhaiTra);
+
+            Excute(sql);
+            return true;
         }
 
     }

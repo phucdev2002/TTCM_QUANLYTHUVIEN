@@ -49,7 +49,7 @@ namespace QuanLyThuVien
                 if (d_NPT.Text == "")
                     _pM.NgayPhaiTra = DateTime.Now;
                 else
-                    _pM.NgayPhaiTra = d_NM.DateTime;
+                    _pM.NgayPhaiTra = d_NPT.DateTime;
 
                 int check = pmBUS.Them(_pM);
                 if (check == -1)

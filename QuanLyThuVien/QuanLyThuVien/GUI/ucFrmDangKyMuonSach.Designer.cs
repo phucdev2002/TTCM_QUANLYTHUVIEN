@@ -55,7 +55,8 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.txt_MS = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_TDG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -68,10 +69,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_MDG.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_MS.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txt_MS);
+            this.panel1.Controls.Add(this.labelControl6);
             this.panel1.Controls.Add(this.txt_TDG);
             this.panel1.Controls.Add(this.labelControl3);
             this.panel1.Controls.Add(this.groupControl1);
@@ -97,7 +101,7 @@
             // txt_TDG
             // 
             this.txt_TDG.Enabled = false;
-            this.txt_TDG.Location = new System.Drawing.Point(133, 42);
+            this.txt_TDG.Location = new System.Drawing.Point(133, 38);
             this.txt_TDG.Margin = new System.Windows.Forms.Padding(2);
             this.txt_TDG.Name = "txt_TDG";
             this.txt_TDG.Size = new System.Drawing.Size(178, 20);
@@ -107,7 +111,7 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(33, 43);
+            this.labelControl3.Location = new System.Drawing.Point(33, 39);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(76, 16);
@@ -179,7 +183,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(188, 180);
+            this.btnXoa.Location = new System.Drawing.Point(188, 181);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(85, 28);
@@ -188,7 +192,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(62, 180);
+            this.btnThem.Location = new System.Drawing.Point(62, 181);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(85, 28);
@@ -199,7 +203,7 @@
             // d_NPT
             // 
             this.d_NPT.EditValue = null;
-            this.d_NPT.Location = new System.Drawing.Point(133, 143);
+            this.d_NPT.Location = new System.Drawing.Point(133, 150);
             this.d_NPT.Margin = new System.Windows.Forms.Padding(2);
             this.d_NPT.Name = "d_NPT";
             this.d_NPT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -213,7 +217,7 @@
             // 
             this.lb_NPT.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.lb_NPT.Appearance.Options.UseFont = true;
-            this.lb_NPT.Location = new System.Drawing.Point(34, 144);
+            this.lb_NPT.Location = new System.Drawing.Point(34, 151);
             this.lb_NPT.Margin = new System.Windows.Forms.Padding(2);
             this.lb_NPT.Name = "lb_NPT";
             this.lb_NPT.Size = new System.Drawing.Size(85, 16);
@@ -223,7 +227,7 @@
             // d_NM
             // 
             this.d_NM.EditValue = null;
-            this.d_NM.Location = new System.Drawing.Point(133, 109);
+            this.d_NM.Location = new System.Drawing.Point(133, 120);
             this.d_NM.Margin = new System.Windows.Forms.Padding(2);
             this.d_NM.Name = "d_NM";
             this.d_NM.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -237,7 +241,7 @@
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(33, 110);
+            this.labelControl4.Location = new System.Drawing.Point(33, 121);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(71, 16);
@@ -249,7 +253,7 @@
             this.cb_TS.BackColor = System.Drawing.Color.White;
             this.cb_TS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.cb_TS.FormattingEnabled = true;
-            this.cb_TS.Location = new System.Drawing.Point(133, 76);
+            this.cb_TS.Location = new System.Drawing.Point(133, 65);
             this.cb_TS.Name = "cb_TS";
             this.cb_TS.Size = new System.Drawing.Size(178, 21);
             this.cb_TS.TabIndex = 22;
@@ -258,7 +262,7 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(33, 76);
+            this.labelControl1.Location = new System.Drawing.Point(33, 65);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(57, 16);
@@ -268,7 +272,7 @@
             // txt_MDG
             // 
             this.txt_MDG.Enabled = false;
-            this.txt_MDG.Location = new System.Drawing.Point(133, 12);
+            this.txt_MDG.Location = new System.Drawing.Point(133, 10);
             this.txt_MDG.Margin = new System.Windows.Forms.Padding(2);
             this.txt_MDG.Name = "txt_MDG";
             this.txt_MDG.Size = new System.Drawing.Size(178, 20);
@@ -278,7 +282,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(33, 13);
+            this.labelControl5.Location = new System.Drawing.Point(33, 11);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(72, 16);
@@ -304,14 +308,14 @@
             this.gridColumn3,
             this.gridColumn4,
             this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7});
+            this.gridColumn6});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             // 
             // gridColumn1
             // 
             this.gridColumn1.Caption = "Mã Phiếu";
+            this.gridColumn1.FieldName = "MaPhieu";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
@@ -319,44 +323,62 @@
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Mã Độc Giả";
+            this.gridColumn2.FieldName = "MaDocGia";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
             // 
             // gridColumn3
             // 
-            this.gridColumn3.Caption = "Họ Tên";
+            this.gridColumn3.Caption = "Mã Sách";
+            this.gridColumn3.FieldName = "MaSach";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
             // 
             // gridColumn4
             // 
-            this.gridColumn4.Caption = "Mã Sách";
+            this.gridColumn4.Caption = "Tên Sách";
+            this.gridColumn4.FieldName = "TenSach";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
             // 
             // gridColumn5
             // 
-            this.gridColumn5.Caption = "Tên Sách";
+            this.gridColumn5.Caption = "Ngày Mượn";
+            this.gridColumn5.FieldName = "NgayMuon";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
             // 
             // gridColumn6
             // 
-            this.gridColumn6.Caption = "Ngày Mượn";
+            this.gridColumn6.Caption = "Ngày Phải Trả";
+            this.gridColumn6.FieldName = "NgayPhaiTra";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
             // 
-            // gridColumn7
+            // txt_MS
             // 
-            this.gridColumn7.Caption = "Ngày Phải Trả";
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 6;
+            this.txt_MS.Enabled = false;
+            this.txt_MS.Location = new System.Drawing.Point(133, 93);
+            this.txt_MS.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_MS.Name = "txt_MS";
+            this.txt_MS.Size = new System.Drawing.Size(178, 20);
+            this.txt_MS.TabIndex = 37;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Location = new System.Drawing.Point(33, 94);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(53, 16);
+            this.labelControl6.TabIndex = 36;
+            this.labelControl6.Text = "Mã Sách:";
             // 
             // ucFrmDangKyMuonSach
             // 
@@ -381,6 +403,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_MDG.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_MS.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -388,8 +411,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.ComboBox cb_TS;
@@ -408,12 +429,15 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.TextEdit txt_TDG;
         private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
+        private DevExpress.XtraEditors.TextEdit txt_MS;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
     }
 }
