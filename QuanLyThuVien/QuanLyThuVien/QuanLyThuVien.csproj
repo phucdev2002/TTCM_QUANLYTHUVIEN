@@ -102,6 +102,7 @@
     <Compile Include="BUS\DaTra_BUS.cs" />
     <Compile Include="BUS\LichSuMuon_BUS.cs" />
     <Compile Include="BUS\MatKhau_BUS.cs" />
+    <Compile Include="BUS\QLDangKyMuon_BUS.cs" />
     <Compile Include="BUS\SachDangMuon_BUS.cs" />
     <Compile Include="BUS\ThanhVien_BUS.cs" />
     <Compile Include="DAO\DangKyMuon_DAO.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="DAO\DaTra_DAO.cs" />
     <Compile Include="DAO\LichSuMuon_DAO.cs" />
     <Compile Include="DAO\MatKhau_DAO.cs" />
+    <Compile Include="DAO\QLDangKyMuon_DAO.cs" />
     <Compile Include="DAO\SachDangMuon_DAO.cs" />
     <Compile Include="DAO\ThanhVien_DAO.cs" />
     <Compile Include="DTO\DangKyMuon.cs" />
@@ -138,6 +140,12 @@
     <Compile Include="DTO\Sach.cs" />
     <Compile Include="BUS\Sach_BUS.cs" />
     <Compile Include="DAO\Sach_DAO.cs" />
+    <Compile Include="GUI\ucFrmQLDangKyMuon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucFrmQLDangKyMuon.Designer.cs">
+      <DependentUpon>ucFrmQLDangKyMuon.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\ucFrmQLPhieuMuon.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -217,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucFrmQLDangKyMuon.resx">
+      <DependentUpon>ucFrmQLDangKyMuon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="GUI\ucFrmQLPhieuMuon.resx">

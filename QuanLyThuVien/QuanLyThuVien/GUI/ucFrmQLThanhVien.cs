@@ -60,7 +60,6 @@ namespace QuanLyThuVien
             lb_Trung.Visible = false;
             DocGia dg = new DocGia();
             dg.MaDocGia = txtMaDocGia.Text;
-            dg.TenDangNhap = txtTenDangNhap.Text;
             dg.HoTen = txtHoTen.Text;
             dg.DiaChi = txtDiaChi.Text;
             if (rdoBtnNam.Checked == true)
@@ -90,7 +89,6 @@ namespace QuanLyThuVien
         private void gridView1_CustomRowCellEditForEditing(object sender, DevExpress.XtraGrid.Views.Grid.CustomRowCellEditEventArgs e)
         {
             txtMaDocGia.Text = gridView1.GetRowCellValue(e.RowHandle, "MaDocGia").ToString();
-            txtTenDangNhap.Text = gridView1.GetRowCellValue(e.RowHandle, "TenDangNhap").ToString();
             txtHoTen.Text = gridView1.GetRowCellValue(e.RowHandle, "HoTen").ToString();
             txtDiaChi.Text = gridView1.GetRowCellValue(e.RowHandle, "DiaChi").ToString();
             string a = gridView1.GetRowCellValue(e.RowHandle, "GioiTinh").ToString();

@@ -1,5 +1,4 @@
-﻿
---drop database QLThuVien
+﻿--drop database QLThuVien
 create database QLThuVien
 go
 use QLThuVien
@@ -10,7 +9,6 @@ go
 create table DOCGIA
 (
 	MaDocGia nchar(10),
-	TenDangNhap nchar(30),
 	HoTen nchar(30),
 	GioiTinh nchar(5),
 	NamSinh date,
@@ -60,12 +58,11 @@ create table ACCOUNT
 --drop table DANGKYMUON
 create table DANGKYMUON
 (
-	MaPhieu nchar(10),
 	MaDocGia nchar(10),
 	MaSach nchar(10),
+	TenSach nchar(50),
 	NgayMuon date,
 	NgayPhaiTra date,
-	PRIMARY KEY (MaPhieu),
 )
 
 
@@ -95,13 +92,13 @@ insert into ACCOUNT values ('DG0007','trungnguyen', '123456', 1)
 insert into ACCOUNT values ('AD01','admin1', '1111', 0)
 insert into ACCOUNT values ('AD02','admin2', '2222', 0)
 ----
-insert into DOCGIA values ('DG0001','nguyenbamanh',N'Nguyễn Bá Mạnh','Nam','2002-02-20',N'385 Trường Chinh, TP Tuy Hòa, Phú Yên')
-insert into DOCGIA values ('DG0002','chauthisuong',N'Châu Thị Sương','Nu','2003-03-22',N'961 Hậu Giang, P.11, Q.6, TPHCM')
-insert into DOCGIA values ('DG0003','phamhaingoc',N'Phạm Hải Ngọc','Nam','2002-07-14',N'83/5 Trương Đăng Qué, Gò Vấp, TP HCM')
-insert into DOCGIA values ('DG0004','tranquangthang',N'Trần Quang Thắng',N'Nam','2000-02-27',N'128b/ 13 Tân Hòa Đông, P.14, Q.6, TPHCM')
-insert into DOCGIA values ('DG0005','nguyenphong',N'Nguyễn Minh Phong',N'Nam','2004-07-7',N'6/12 Nguyễn Siêu, P.Bến Nghé, TPHCM')
-insert into DOCGIA values ('DG0006','nguyenphuc',N'Nguyễn Minh Phúc',N'Nam','2002-02-20',N'92 Trần Hưng Đạo, Ngô Mây')
-insert into DOCGIA values ('DG0007','trungnguyen',N'Lê Trung Nguyen',N'Nam','2000-07-21',N'148 Lê Đức Thọ, P.5, Gò Vấp')
+insert into DOCGIA values ('DG0001',N'Nguyễn Bá Mạnh','Nam','2002-02-20',N'385 Trường Chinh, TP Tuy Hòa, Phú Yên')
+insert into DOCGIA values ('DG0002',N'Châu Thị Sương','Nu','2003-03-22',N'961 Hậu Giang, P.11, Q.6, TPHCM')
+insert into DOCGIA values ('DG0003',N'Phạm Hải Ngọc','Nam','2002-07-14',N'83/5 Trương Đăng Qué, Gò Vấp, TP HCM')
+insert into DOCGIA values ('DG0004',N'Trần Quang Thắng',N'Nam','2000-02-27',N'128b/ 13 Tân Hòa Đông, P.14, Q.6, TPHCM')
+insert into DOCGIA values ('DG0005',N'Nguyễn Minh Phong',N'Nam','2004-07-7',N'6/12 Nguyễn Siêu, P.Bến Nghé, TPHCM')
+insert into DOCGIA values ('DG0006',N'Nguyễn Minh Phúc',N'Nam','2002-02-20',N'92 Trần Hưng Đạo, Ngô Mây')
+insert into DOCGIA values ('DG0007',N'Lê Trung Nguyen',N'Nam','2000-07-21',N'148 Lê Đức Thọ, P.5, Gò Vấp')
 
 
 ----
@@ -130,8 +127,7 @@ insert into PHIEUTRA values ('PT0001','DG0006','S0008','2023-06-16')
 
 
 ---
-insert into DANGKYMUON values ('DK0001','DG0002','S0001','2023-06-25', '2023-06-30')
-insert into DANGKYMUON values ('DK0002','DG0006','S0003','2023-06-26', '2023-07-01')
-insert into DANGKYMUON values ('DK0003','DG0006','S0008','2023-06-28', '2023-07-03')
-
-
+insert into DANGKYMUON values ('DG0002','S0001',N'Lập trình hướng đối tượng','2023-06-25', '2023-06-30')
+insert into DANGKYMUON values ('DG0006','S0003',N'Kỹ thuật lập trình','2023-06-26', '2023-07-01')
+insert into DANGKYMUON values ('DG0006','S0008',N'Cấu trúc dữ liệu và giải thuật','2023-06-28', '2023-07-03')
+insert into DANGKYMUON values ('DG0002','S0005',N'Công nghệ đa phương tiện','2023-06-29', '2023-07-05')

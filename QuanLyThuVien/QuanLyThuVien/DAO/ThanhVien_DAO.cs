@@ -19,10 +19,10 @@ namespace QuanLyThuVien.DAO
             if (GetData("select* from ACCOUNT where TenDangNhap = '" + _tv.TenDangNhap + "'").Rows.Count > 0)
                 return false;
             Random rdm = new Random();
-            _tv.MaDocGia = rdm.Next(0, 1000).ToString();
+            _tv.MaDocGia = "DG" + rdm.Next(0, 9999).ToString();
             while(GetData("select* from ACCOUNT where MaDocGia = '" + _tv.TenDangNhap + "'").Rows.Count > 0)
             {
-                _tv.MaDocGia = rdm.Next(0, 1000).ToString();
+                _tv.MaDocGia = "DG" + rdm.Next(0, 9999).ToString();
             }
             string sql = string.Format("Insert Into ACCOUNT values('{0}','{1}','{2}','{3}')",
                  _tv.MaDocGia, _tv.TenDangNhap, _tv.MatKhau, 1);

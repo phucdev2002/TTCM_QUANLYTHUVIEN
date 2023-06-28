@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.txtTinhTrang = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.lb_MDG = new System.Windows.Forms.Label();
             this.lb_Trung = new System.Windows.Forms.Label();
             this.txtGiaSach = new DevExpress.XtraEditors.TextEdit();
@@ -62,10 +64,9 @@
             this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.txtTinhTrang = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTinhTrang.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGiaSach.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nb_SoLuong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTimSach.Properties)).BeginInit();
@@ -78,7 +79,6 @@
             this.panelControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTinhTrang.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // panelControl1
@@ -113,6 +113,23 @@
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(845, 170);
             this.panelControl1.TabIndex = 0;
+            // 
+            // txtTinhTrang
+            // 
+            this.txtTinhTrang.Location = new System.Drawing.Point(238, 147);
+            this.txtTinhTrang.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTinhTrang.Name = "txtTinhTrang";
+            this.txtTinhTrang.Size = new System.Drawing.Size(56, 20);
+            this.txtTinhTrang.TabIndex = 17;
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Location = new System.Drawing.Point(183, 151);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(2);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(53, 13);
+            this.labelControl9.TabIndex = 16;
+            this.labelControl9.Text = "Tình trạng:";
             // 
             // lb_MDG
             // 
@@ -188,7 +205,7 @@
             // btnTimSach
             // 
             this.btnTimSach.ImageOptions.Image = global::QuanLyThuVien.Properties.Resources.Search_icon1;
-            this.btnTimSach.Location = new System.Drawing.Point(645, 8);
+            this.btnTimSach.Location = new System.Drawing.Point(657, 8);
             this.btnTimSach.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimSach.Name = "btnTimSach";
             this.btnTimSach.Size = new System.Drawing.Size(33, 22);
@@ -199,9 +216,9 @@
             this.labelControl7.Location = new System.Drawing.Point(411, 14);
             this.labelControl7.Margin = new System.Windows.Forms.Padding(2);
             this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(46, 13);
+            this.labelControl7.Size = new System.Drawing.Size(63, 13);
             this.labelControl7.TabIndex = 4;
-            this.labelControl7.Text = "Tìm Sách:";
+            this.labelControl7.Text = "Tìm Mã Sách:";
             // 
             // nb_SoLuong
             // 
@@ -213,7 +230,7 @@
             // 
             // txtTimSach
             // 
-            this.txtTimSach.Location = new System.Drawing.Point(471, 11);
+            this.txtTimSach.Location = new System.Drawing.Point(483, 11);
             this.txtTimSach.Margin = new System.Windows.Forms.Padding(2);
             this.txtTimSach.Name = "txtTimSach";
             this.txtTimSach.Size = new System.Drawing.Size(169, 20);
@@ -425,23 +442,6 @@
             this.gridColumn7.VisibleIndex = 7;
             this.gridColumn7.Width = 85;
             // 
-            // txtTinhTrang
-            // 
-            this.txtTinhTrang.Location = new System.Drawing.Point(238, 147);
-            this.txtTinhTrang.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTinhTrang.Name = "txtTinhTrang";
-            this.txtTinhTrang.Size = new System.Drawing.Size(56, 20);
-            this.txtTinhTrang.TabIndex = 17;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Location = new System.Drawing.Point(183, 151);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(2);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(53, 13);
-            this.labelControl9.TabIndex = 16;
-            this.labelControl9.Text = "Tình trạng:";
-            // 
             // ucFrmQLSach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,6 +455,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTinhTrang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtGiaSach.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nb_SoLuong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTimSach.Properties)).EndInit();
@@ -467,7 +468,6 @@
             this.panelControl2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTinhTrang.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

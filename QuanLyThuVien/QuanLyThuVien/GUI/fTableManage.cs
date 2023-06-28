@@ -164,5 +164,13 @@ namespace QuanLyThuVien
             panelCha.Controls.Add(frm);
           
         }
+
+        private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            panelCha.Controls.Clear();
+            ucFrmQLDangKyMuon frm = new ucFrmQLDangKyMuon();
+            frm.Dock = System.Windows.Forms.DockStyle.Fill;
+            panelCha.Controls.Add(frm);
+        }
     }
 }

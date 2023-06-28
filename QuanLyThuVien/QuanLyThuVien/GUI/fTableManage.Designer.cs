@@ -54,6 +54,7 @@
             this.skinPaletteDropDownButtonItem1 = new DevExpress.XtraBars.SkinPaletteDropDownButtonItem();
             this.skinLink = new DevExpress.XtraBars.BarLinkContainerItem();
             this.barBtnDangKyMuonSach = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPageCategory1 = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.ribbonTimKiem = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -210,10 +211,11 @@
             this.skinDropDownButtonItem1,
             this.skinPaletteDropDownButtonItem1,
             this.skinLink,
-            this.barBtnDangKyMuonSach});
+            this.barBtnDangKyMuonSach,
+            this.barButtonItem5});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ribbonControl1.MaxItemId = 25;
+            this.ribbonControl1.MaxItemId = 26;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.ribbonPageCategory1});
@@ -410,10 +412,20 @@
             // 
             this.barBtnDangKyMuonSach.Caption = "Đăng ký mượn sách";
             this.barBtnDangKyMuonSach.Id = 24;
-            this.barBtnDangKyMuonSach.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barBtnDangKyMuonSach.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnDangKyMuonSach.ImageOptions.Image")));
             this.barBtnDangKyMuonSach.Name = "barBtnDangKyMuonSach";
             this.barBtnDangKyMuonSach.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             this.barBtnDangKyMuonSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnDangKyMuonSach_ItemClick);
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Quản lý đăng ký mượn";
+            this.barButtonItem5.Id = 25;
+            this.barButtonItem5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem5.ImageOptions.Image")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem5_ItemClick);
             // 
             // ribbonPageCategory1
             // 
@@ -467,6 +479,7 @@
             // 
             // ribbonPageGroup2
             // 
+            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup2.ItemLinks.Add(this.barBtnQLPM);
             this.ribbonPageGroup2.ItemLinks.Add(this.barBtnQLPT);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
@@ -1220,5 +1233,6 @@
         private DevExpress.XtraBars.BarLinkContainerItem skinLink;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
         private DevExpress.XtraBars.BarButtonItem barBtnDangKyMuonSach;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
     }
 }

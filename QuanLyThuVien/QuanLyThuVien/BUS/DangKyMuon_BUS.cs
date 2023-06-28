@@ -17,13 +17,15 @@ namespace QuanLyThuVien.BUS
             return dkmDao.loadDangKyMuon(_tdn);
         }
 
-        public int Them(DangKyMuon _dkm)
+        public void Them(DangKyMuon _dkm)
         {
-            if (string.IsNullOrEmpty(_dkm.MaPhieu))
-                return 0;
-            if (!dkmDao.Insert(_dkm))
-                return -1;
-            return 1;
+            dkmDao.Insert(_dkm);
         }
+
+        public DataTable TimKiem(string _timkiem, string _loaitk)
+        {
+            return dkmDao.Search(_timkiem, _loaitk);
+        }
+
     }
 }

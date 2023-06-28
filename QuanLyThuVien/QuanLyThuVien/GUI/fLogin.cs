@@ -26,7 +26,7 @@ namespace QuanLyThuVien
             {
                 fTableManage f = new fTableManage(this, txt_TK.Text);             
                 f.ShowDialog();
-                this.Hide();
+                this.Hide();               
             }
             else
             {

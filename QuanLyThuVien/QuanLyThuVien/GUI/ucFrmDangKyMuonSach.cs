@@ -28,13 +28,15 @@ namespace QuanLyThuVien.GUI
 
         private void ucFrmDangKyMuonSach_Load(object sender, EventArgs e)
         {           
-            DataTable dt = _dt.GetData("select * from ACCOUNT, DOCGIA, SACH where ACCOUNT.MaDocGia = DOCGIA.MaDocGia and ACCOUNT.TenDangNhap = '" + tdn + "'");
+            DataTable dt = _dt.GetData("select ACC.TenDangNhap, ACC.MaDocGia, DG.MaDocGia, DG.HoTen, S.TenSach, S.MaSach from ACCOUNT ACC, DOCGIA DG, SACH S where ACC.MaDocGia = DG.MaDocGia and ACC.TenDangNhap = '" + tdn + "'");
             txt_MDG.DataBindings.Add("Text", dt, "MaDocGia", true);
             txt_TDG.DataBindings.Add("Text", dt, "HoTen", true);
             cb_TS.DataSource = dt;
             cb_TS.DisplayMember = "TenSach";
-            if(cb_TS == T)
-
+            if(cb_TS.DisplayMember == "TenSach")
+            {
+                txt_MS.DataBindings.Add("Text", dt, "MaSach", true);
+            }
             gridControl1.DataSource = dkmBUS.GetList(tdn);
         }
 
@@ -44,7 +46,7 @@ namespace QuanLyThuVien.GUI
             
             _dkm.MaDocGia = txt_MDG.Text;
             _dkm.MaSach = txt_MS.Text;
-
+            _dkm.TenSach = cb_TS.Text;
             if (d_NM.Text == "")
                 _dkm.NgayMuon = DateTime.Now;
             else
@@ -54,11 +56,22 @@ namespace QuanLyThuVien.GUI
             else
                 _dkm.NgayPhaiTra = d_NPT.DateTime;
 
-            int check = dkmBUS.Them(_dkm);
-            if (check == -1)
-                //lb_Trung.Visible = true;
+            dkmBUS.Them(_dkm);
+            ucFrmDangKyMuonSach_Load(sender, e);
+        }
+
+        private void txtTimKiem_EditValueChanged(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "")
+            {
+                gridControl1.DataSource = dkmBUS.GetList(tdn);
+
+            }
             else
-                ucFrmDangKyMuonSach_Load(sender, e);
+            {
+                if(rdoBtnTenSach.Checked == true)
+                    gridControl1.DataSource = dkmBUS.TimKiem(txtTimKiem.Text, "TenSach");              
+            }
         }
     }
 }
